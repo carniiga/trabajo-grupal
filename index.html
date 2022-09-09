@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/af216a0741.js" crossorigin="anonymous"></script>
+    <title>E5</title> 
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-menu">
+                <img src="./assets/nucbazappiicon 1.png" alt="" class="logo-img">
+            </div>
+            <div class="nav-items">
+                <div class="home">
+                <img src="./assets/Home.png" class="home-img"alt="">
+                <p>Home</p>
+                </div> 
+                <img src="./assets/Fill 7.png" class="cart" id="cart" alt="">
+                <img src="./assets/Ellipse 163.png" class="eclipse" alt=""> 
+                <p class="cart-cont" id="cart-cont">7</p>
+                <img src="./assets/Fill 4.png" class="head" alt="">
+                 <img src="./assets/Fill 1.png" class="cuerpo" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="cart-menu">
+      <button  class="close-btn">x</button>
+      <h3> tus productos </h3>
+      <div class="cards-cart">
+        <div class="card-desc">
+          <div class="img-card">
+            <img src="./assets/Photo Menu-8.png" alt="">
+          </div>
+          <div class="card-desc-medio">
+          <h5>Bennazianna</h5>
+          <p>La más completa</p>
+          <p class="card-price" id="card-price">$3650</p>
+          </div>
+          <div class="suma-resta">
+            <button class="resta">-</button>
+            <span class="cant" id="cant">1</span>
+            <button class="suma">+</button>
+          </div>
+        </div>
+        
+        <div class="total-contenedor">
+          <h3>Total : </h3>
+          <h3 class="total-price">$3665</h3>
+        </div>
+        <div class="buy-btn">
+          <button class="comprar" id="btn-comprar">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+    <section class="desc">
+            <div class="hero-desc">
+                <h1>Si tenes zappi,</h1>
+                    <h2>tenes Nucba.</h2>
+                    <p>buscá lo que quieras y nucba te quedes sin comida.</p>   
+                      <button class="show-more" id="show-more">VER MÀS</button>
+            </div>
+            <div class="img-pizzas">
+                <img src="./assets/image 34.png" class="pizza1" alt="">
+                <img src="./assets/pizza 1.png" class="pizza2" alt="">
+            </div>
+    </section>
+
+    <section class="recomendaciones">
+      <h4>Hoy te recomendamos</h4>
+      <div class="recomendaciones__cards__container">
+
+          <div class="recomendaciones__cards">
+              <div class="recomendaciones__img">
+                  <img src="./assets/Photo Menu-1.png" style="height: 80px" alt="">
+              </div>
+              <p>Pizzas</p>
+          </div>
+
+          <div class="recomendaciones__cards">
+              <div class="recomendaciones__img">
+                  <img src="./assets/Photo Menu-8.png" style="height: 80px" alt="">
+              </div>
+              <p>Bennazianna</p>
+          </div>
+
+          <div class="recomendaciones__cards">
+              <div class="recomendaciones__img">
+                  <img src="./assets/Photo Menu-10.png" style="height: 80px" alt="">
+              </div>
+              <p>Papas | Provenzal</p>
+          </div>
+  </section>
+    <section class="categorias" id="categorias">
+        <h4>Categorias</h4>
+      <div class="categorias__cards__container">
+        <div class="categorias__cards" data-category="pizzas">
+          <div class="card__img">
+            <img src="./assets/image 34.png" alt="">
+          </div>
+          <p>Pizzas</p>
+          <hr class="filter">
+        </div>
+        <div class="categorias__cards" data-category="hamburguesas">
+          <div class="card__img">
+            <img src="./assets/burger 1.png" alt="">
+          </div>
+          <p>Hamburguesas</p>
+          <hr class="filter">
+        </div>
+        <div class="categorias__cards" data-category="guarniciones">
+          <div class="card__img">
+            <img src="./assets/fries 2.png" alt="">
+          </div>
+          <p>Guarniciones</p>
+          <hr class="filter">
+        </div>
+        <div class="categorias__cards" data-category="individuales">
+          <div class="card__img">
+            <img src="./assets/pizza 2.png"alt="">
+          </div>
+          <p>Individuales</p>
+          <hr class="filter" >
+        </div>
+        <div class="categorias__cards" data-category="wraps">
+          <div class="card__img">
+            <img src="./assets/buritto 1.png" alt="">
+          </div>
+          <p>Wraps</p>
+          <hr class="filter" >
+        </div>
+        <div class="categorias__cards" data-category="comida-mexicana">
+          <div class="card__img">
+            <img src="./assets/taco 1.png" alt="">
+          </div>
+          <p>Comida mexicana</p>
+          <hr class="filter" >
+        </div>
+        <div class="categorias__cards" data-category="bebidas">
+          <div class="card__img">
+            <img src="./assets/float 1.png" alt="">
+          </div>
+          <p>Bebidas</p>
+          <hr class="filter">
+        </div>
+      </div>
+      </section>
+
+      <section class="products-section">
+        <h3>Los más populares</h3>
+  
+        <div class="products">
+  
+          <!--<div class="card-product">
+               <img src="./assets/Photo Menu.png"class="product-image"alt="product-image"/>
+    
+              <div class="info-product">
+                <h4>Pizza peperoni</h4>
+                <p>Queso y peperoni</p>
+              </div>
+    
+              <div class="add-product">
+                <p class="product-price">$350</p>
+                <button class="btn-product">Agregar</button>
+              </div> 
+            </div> -->
+            <!-- <div class="card-product">
+              <img
+                src="./assets/Photo Menu-1.png"
+                class="product-image"
+                alt="product-image"
+              />
+    
+              <div class="info-product">
+                <h4>Pizza peperoni</h4>
+                <p>Queso y peperoni</p>
+              </div>
+    
+              <div class="add-product">
+                <p class="product-price">$350</p>
+                <button class="btn-product">Agregar</button>
+              </div>
+            </div>
+          <div class="card-product">
+            <img
+              src="./assets/Photo Menu-3.png"
+              class="product-image"
+              alt="product-image"
+            />
+  
+            <div class="info-product">
+              <h4>Pizza peperoni</h4>
+              <p>Queso y peperoni</p>
+            </div>
+  
+            <div class="add-product">
+              <p class="product-price">$350</p>
+              <button class="btn-product">Agregar</button>
+            </div>
+          </div>
+  
+          <div class="card-product">
+            <img
+              src="./assets/Photo Menu-4.png"
+              class="product-image"
+              alt="product-image"
+            />
+  
+            <div class="info-product">
+              <h4>Pizza peperoni</h4>
+              <p>Queso y peperoni</p>
+            </div>
+  
+            <div class="add-product">
+              <p class="product-price">$350</p>
+              <button class="btn-product">Agregar</button>
+            </div>
+          </div>
+  
+          <div class="card-product">
+            <img
+              src="./assets/Photo Menu-5.png"
+              class="product-image"
+              alt="product-image"
+            />
+  
+            <div class="info-product">
+              <h4>Pizza peperoni</h4>
+              <p>Queso y peperoni</p>
+            </div>
+  
+            <div class="add-product">
+              <p class="product-price">$350</p>
+              <button class="btn-product">Agregar</button>
+            </div>
+          </div>
+  
+          <div class="card-product">
+            <img
+              src="./assets/Photo Menu-6.png"
+              class="product-image"
+              alt="product-image"
+            />
+  
+            <div class="info-product">
+              <h4>Pizza peperoni</h4>
+              <p>Queso y peperoni</p>
+            </div>
+  
+            <div class="add-product">
+              <p class="product-price">$350</p>
+              <button class="btn-product">Agregar</button>
+            </div>
+          </div>
+  
+          <div class="card-product">
+            <img
+              src="./assets/Photo Menu-7.png"
+              class="product-image"
+              alt="product-image"
+            />
+  
+            <div class="info-product">
+              <h4>Pizza peperoni</h4>
+              <p>Queso y peperoni</p>
+            </div>
+  
+            <div class="add-product">
+              <p class="product-price">$350</p>
+              <button class="btn-product">Agregar</button>
+            </div>
+          </div>
+  
+          <div class="card-product">
+            <img
+              src="./assets/Photo Menu-9.png"
+              class="product-image"
+              alt="product-image"
+            />
+  
+            <div class="info-product">
+              <h4>Pizza peperoni</h4>
+              <p>Queso y peperoni</p>
+            </div>
+  
+            <div class="add-product">
+              <p class="product-price">$350</p>
+              <button class="btn-product">Agregar</button>
+            </div>
+          </div> -->
+          <div class="pruebaa" id="prueba">aaaa</div>
+          <div class="pruebaa" id="prueba">aaaa</div>
+          <div class="pruebaa" id="prueba">aaaa</div>
+          <div class="pruebaa" id="prueba">aaaa</div>
+
+        </div>
+      </section>
+
+     
+</body>
+<script src="data.js"></script>
+<script src="main.js"></script>
+</html>
